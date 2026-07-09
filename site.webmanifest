@@ -1,0 +1,9 @@
+{
+  "name": "C. P. Karthik Portfolio",
+  "short_name": "CPK Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080c16",
+  "theme_color": "#0b1020",
+  "description": "Professional portfolio for C. P. Karthik."
+}
