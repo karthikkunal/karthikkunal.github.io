@@ -3,7 +3,7 @@
   "short_name": "CPK Portfolio",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#080c16",
-  "theme_color": "#0b1020",
-  "description": "Professional portfolio for C. P. Karthik."
+  "background_color": "#f8f7f3",
+  "theme_color": "#f8f7f3",
+  "description": "Cybersecurity, backend engineering and AI security portfolio for C. P. Karthik."
 }

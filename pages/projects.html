@@ -1,129 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projects by C. P. Karthik in AI security, threat response, Go, Python, and cybersecurity automation." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A searchable, interactive catalogue of C. P. Karthik's public GitHub projects in cybersecurity, application security, IoT, AI, cryptography, cloud and software engineering." />
   <meta name="author" content="C. P. Karthik" />
-  <meta name="theme-color" content="#0b1020" />
-  <meta property="og:title" content="Projects | C. P. Karthik" />
-  <meta property="og:description" content="Projects by C. P. Karthik in AI security, threat response, Go, Python, and cybersecurity automation." />
+  <meta name="theme-color" content="#f8f7f3" />
+  <meta property="og:title" content="Cybersecurity Projects, Research &amp; Builds | C. P. Karthik" />
+  <meta property="og:description" content="Explore security research, AppSec, AI, networking, infrastructure, embedded systems and engineering projects from both of Karthik's GitHub accounts." />
   <meta property="og:type" content="website" />
-  <title>Projects | C. P. Karthik</title>
+  <title>Cybersecurity Projects &amp; Research — C. P. Karthik</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="stylesheet" href="../assets/portfolio.css" />
 </head>
 <body>
-<div class="page-noise"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="identity" href="../index.html" aria-label="C. P. Karthik, home"><span class="identity-mark">K.</span><span class="identity-copy"><strong>C. P. Karthik</strong><small>Security · Systems · Software</small></span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">Menu <span aria-hidden="true">+</span></button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation"><a href="../index.html">Home</a><a href="about.html">About</a><a class="active" href="projects.html" aria-current="page">Projects</a><a href="writing.html">Writing</a><a href="https://www.linkedin.com/in/c-p-karthik-9128b9252/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="nav-contact" href="contact.html">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main class="subpage projects-page" id="main">
+    <section class="page-title project-page-title">
+      <p class="section-tag">THE SECURITY LAB · 27 GITHUB PROJECTS + 8 RESEARCH BUILDS</p>
+      <h1>A bigger surface.<br />More to <span>secure.</span></h1>
+      <p>27 distinct public project repositories from both of your GitHub accounts, alongside eight research and engineering builds documented in your résumé. Explore cybersecurity, network and cloud defense, application security, AI, cryptography, IoT and software engineering.</p>
+      <div class="project-page-accounts">
+        <a href="https://github.com/Karthikkkunal" target="_blank" rel="noreferrer"><span class="github-avatar github-avatar-first" aria-hidden="true">K</span><span><small>SECURITY &amp; AI</small><strong>@Karthikkkunal</strong></span><span class="account-arrow" aria-hidden="true">↗</span></a>
+        <a href="https://github.com/karthikkunal" target="_blank" rel="noreferrer"><span class="github-avatar github-avatar-second" aria-hidden="true">K</span><span><small>PLATFORMS &amp; SYSTEMS</small><strong>@karthikkunal</strong></span><span class="account-arrow" aria-hidden="true">↗</span></a>
+        <span class="repository-count"><strong>29</strong><span>PUBLIC REPOSITORIES REVIEWED</span></span>
+      </div>
+    </section>
 
-<header class="site-header">
-  <a class="identity" href="../index.html" aria-label="C. P. Karthik home">
-    <span class="identity-mark">CPK</span>
-    <span>
-      <strong>C. P. Karthik</strong>
-      <small>AI Security / MLOps / Cybersecurity</small>
-    </span>
-  </a>
-  <button class="menu-btn" id="menuBtn" aria-label="Open navigation">Menu</button>
-  <nav class="nav-links" id="navLinks">
-    <a class="" href="../index.html">Home</a>
-<a class="" href="about.html">About</a>
-<a class="active" href="projects.html">Projects</a>
-<a class="" href="writing.html">Writing</a>
-<a class="" href="contact.html">Contact</a>
-  </nav>
-</header>
+    <section class="project-browser" id="project-browser" aria-label="Search and filter cybersecurity projects">
+      <div class="project-browser-heading"><div><span class="section-number">THE PROJECT EXPLORER</span><h2>Find your <span>frontier.</span></h2></div><label class="project-search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><span class="visually-hidden">Search 35 builds</span><input id="projectSearch" type="search" autocomplete="off" placeholder="Search 35 builds, tools, ideas…" /><span class="search-key" aria-hidden="true">/</span></label></div>
+      <div class="project-filter-list" role="group" aria-label="Filter projects by field">
+        <button class="filter-chip is-active" type="button" data-project-filter="all" data-filter-label="all" aria-pressed="true">Everything <span class="filter-count">35</span></button>
+        <button class="filter-chip" type="button" data-project-filter="defense" data-filter-label="cyber defense" aria-pressed="false">Cyber defense <span class="filter-count">0</span></button>
+        <button class="filter-chip" type="button" data-project-filter="appsec" data-filter-label="application security" aria-pressed="false">AppSec <span class="filter-count">0</span></button>
+        <button class="filter-chip" type="button" data-project-filter="ai-security" data-filter-label="AI &amp; security research" aria-pressed="false">AI &amp; research <span class="filter-count">0</span></button>
+        <button class="filter-chip" type="button" data-project-filter="network-defense" data-filter-label="network defense" aria-pressed="false">Network defense <span class="filter-count">0</span></button>
+        <button class="filter-chip" type="button" data-project-filter="cloud" data-filter-label="cloud &amp; infrastructure" aria-pressed="false">Cloud &amp; Linux <span class="filter-count">0</span></button>
+        <button class="filter-chip" type="button" data-project-filter="iot" data-filter-label="IoT &amp; embedded security" aria-pressed="false">IoT &amp; hardware <span class="filter-count">0</span></button>
+        <button class="filter-chip" type="button" data-project-filter="cryptography" data-filter-label="cryptography" aria-pressed="false">Cryptography <span class="filter-count">0</span></button>
+        <button class="filter-chip" type="button" data-project-filter="engineering" data-filter-label="software engineering" aria-pressed="false">Engineering <span class="filter-count">0</span></button>
+      </div>
+      <p id="projectCount" class="project-count" role="status" aria-live="polite">Showing all projects</p>
 
-<main class="subpage">
-  <section class="page-title">
-    <p class="section-tag">Projects</p>
-    <h1>Selected systems, experiments, and product directions.</h1>
-    <p>These projects show my interest in practical cybersecurity engineering: investigation, automation, visibility, and analyst experience.</p>
-  </section>
+      <div id="projectGrid" class="project-list project-grid" role="list">
+        <article class="project-detail" id="atro" role="listitem" data-project-card data-categories="defense ai-security engineering" data-search="adaptive threat response orchestrator atro multi-agent AI LLM agents MCP SIEM cybersecurity threat intelligence">
+          <p class="project-meta">01 · AI-ASSISTED CYBER DEFENSE · GITHUB</p><h2>Adaptive Threat Response Orchestrator (ATRO)</h2><p>A multi-agent cyber-defense project that explores using language models, contextual security data and network-monitoring agents to assist threat analysis and incident response.</p><div class="project-tags"><span>Python</span><span>LLMs</span><span>MCP</span><span>SIEM</span><span>Zeek</span><span>Suricata</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/ATRO-LLM-MCP" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="threat-hunting" role="listitem" data-project-card data-categories="defense ai-security" data-search="ai-powered autonomous threat hunting anomaly detection machine learning CVE enrichment NLP FAISS streamlit cybersecurity">
+          <p class="project-meta">RÉSUMÉ · RESEARCH BUILD · AI THREAT HUNTING</p><h2>AI-powered autonomous threat hunting</h2><p>A résumé-backed research build combining anomaly detection, CVE enrichment, natural-language processing and searchable security knowledge in an analyst-focused dashboard.</p><div class="project-tags"><span>Python</span><span>FAISS</span><span>spaCy</span><span>scikit-learn</span><span>Streamlit</span></div><div class="project-card-footer"><a href="../assets/karthik-cp-karthik-resume.pdf" download>See project details in my résumé ↓</a><span class="project-source">Résumé · research build</span></div>
+        </article>
+        <article class="project-detail" id="ai-dashboard" role="listitem" data-project-card data-categories="defense ai-security engineering" data-search="AI-powered cybersecurity assistant dashboard security posture threats vulnerabilities incidents risk detection">
+          <p class="project-meta">02 · SECURITY OPERATIONS · AI ANALYTICS</p><h2>AI Cybersecurity Assistant Dashboard</h2><p>A security-posture dashboard bringing together threat monitoring, vulnerability visibility, risk context and real-time operational insights.</p><div class="project-tags"><span>TypeScript</span><span>React</span><span>AI/ML</span><span>Security analytics</span><span>Docker</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/AI-Powered-Cybersecurity-Assistant-Dashboard" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="gosec" role="listitem" data-project-card data-categories="defense ai-security engineering" data-search="Go-sec cybersecurity roadmap learning education security professional offensive defensive YouTube videos">
+          <p class="project-meta">03 · CYBERSECURITY EDUCATION · FULL STACK</p><h2>Go-sec · Cybersecurity Roadmap</h2><p>A seven-phase interactive learning roadmap for growing from foundational skills into offensive security, defensive security, advanced practice, certifications and career pathways.</p><div class="project-tags"><span>React</span><span>TypeScript</span><span>TanStack Start</span><span>API design</span><span>Netlify</span></div><div class="project-card-footer"><a href="https://github.com/karthikkunal/Go-sec" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">karthikkunal</span></div>
+        </article>
+        <article class="project-detail" id="gomail-ai" role="listitem" data-project-card data-categories="defense appsec ai-security" data-search="GoMail AI email phishing threat investigation EML PDF DOCX OCR QR URLs IPs hashes OSINT VirusTotal AbuseIPDB MITRE ATT&CK">
+          <p class="project-meta">04 · INCIDENT RESPONSE · PHISHING INTELLIGENCE</p><h2>GoMail AI · Multiformat phishing triage</h2><p>A safe local investigation MVP for analyzing email, documents, images, headers, URLs, domains, IPs and hashes—then surfacing evidence and a reasoned verdict.</p><div class="project-tags"><span>Python</span><span>FastAPI</span><span>TypeScript</span><span>Docker</span><span>MITRE ATT&amp;CK</span></div><div class="project-card-footer"><a href="https://github.com/karthikkunal/gomail-ai.github.io" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">karthikkunal</span></div>
+        </article>
+        <article class="project-detail" id="wireless-ids" role="listitem" data-project-card data-categories="defense network-defense iot ai-security" data-search="wireless intrusion detection WIDS Evil Twin deauthentication WiFi WPA2 Scapy Wireshark Zeek Suricata">
+          <p class="project-meta">05 · NETWORK DEFENSE · WIRELESS SECURITY</p><h2>Wireless Intrusion Detection System (WIDS)</h2><p>A Wi-Fi defense project exploring Evil Twin and rogue access points, deauthentication attacks, WPA2 anomalies, wireless traffic monitoring and IDS integrations.</p><div class="project-tags"><span>Wireless security</span><span>Python</span><span>Scapy</span><span>Zeek</span><span>Suricata</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/Wireless-Intrusion-Detection-System-WIDS-" target="_blank" rel="noreferrer">GitHub repository ↗</a><a href="https://fabulous-dieffenbachia-9d3a55.netlify.app/" target="_blank" rel="noreferrer">Live project ↗</a></div>
+        </article>
+        <article class="project-detail" id="golang-vuln" role="listitem" data-project-card data-categories="defense appsec engineering" data-search="Go vulnerability web scraper scanners CVE OEM advisories Colly chromedp OSINT HTTP">
+          <p class="project-meta">06 · VULNERABILITY INTELLIGENCE · GO</p><h2>Concurrent Go vulnerability intelligence</h2><p>Security-advisory and high/critical CVE collection in Go, with concurrent crawling, structured results and practical report outputs.</p><div class="project-tags"><span>Go</span><span>Colly</span><span>chromedp</span><span>Goroutines</span><span>JSON / CSV</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/Vulnerability-Web-Scraper" target="_blank" rel="noreferrer">Explore the repository ↗</a><a class="project-source" href="https://github.com/Karthikkkunal/Golang-SecTools-Empowering-Cybersecurity" target="_blank" rel="noreferrer">Go security scanners ↗</a></div>
+        </article>
+        <article class="project-detail" id="file-vuln" role="listitem" data-project-card data-categories="appsec defense engineering" data-search="file vulnerability scanner upload file type path traversal XSS malware injection sanitization permissions privilege escalation DOS">
+          <p class="project-meta">07 · APPLICATION SECURITY · FILE ANALYSIS</p><h2>File Vulnerability Scanner</h2><p>A modular file-safety checker for upload weaknesses, file-injection patterns, path traversal, unsafe content, XSS, permissions, access controls and denial-of-service risks.</p><div class="project-tags"><span>File security</span><span>Path traversal</span><span>XSS</span><span>Malware detection</span><span>DoS mitigation</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/File-Vulnerability-Scanner" target="_blank" rel="noreferrer">Explore the repository ↗</a><a href="https://filescanner.netlify.app/" target="_blank" rel="noreferrer">Live project ↗</a></div>
+        </article>
+        <article class="project-detail" id="secure-upload" role="listitem" data-project-card data-categories="appsec defense ai-security" data-search="secure file upload malware detection ClamAV machine learning file validation encryption access control">
+          <p class="project-meta">08 · SECURE FILE HANDLING · MALWARE DEFENSE</p><h2>Malware-aware secure file uploads</h2><p>A secure-upload concept combining allowed-type and size checks with ClamAV and machine-learning-assisted malware screening and protected storage.</p><div class="project-tags"><span>ClamAV</span><span>Malware scanning</span><span>Machine learning</span><span>Type validation</span><span>Secure storage</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/Secure-File-Upload-System" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="sectools" role="listitem" data-project-card data-categories="appsec defense engineering" data-search="Golang Go security tools application vulnerability scanner scanning developer security">
+          <p class="project-meta">09 · SECURE DEVELOPMENT · SECURITY TOOLING</p><h2>Golang SecTools</h2><p>A Go security-tooling project investigating repeatable application scanning and vulnerability identification as part of a proactive development process.</p><div class="project-tags"><span>Go</span><span>Security testing</span><span>Vulnerability scanning</span><span>Secure SDLC</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/Golang-SecTools-Empowering-Cybersecurity" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="csrf" role="listitem" data-project-card data-categories="appsec engineering" data-search="CSRF protection cross-site request forgery token validation TypeScript JavaScript Express">
+          <p class="project-meta">10 · WEB APPLICATION SECURITY · CSRF</p><h2>Cross-Site Request Forgery protection</h2><p>Hands-on examples of CSRF-token generation, validation and safer request handling for both JavaScript and TypeScript applications.</p><div class="project-tags"><span>OWASP</span><span>CSRF tokens</span><span>TypeScript</span><span>JavaScript</span><span>Express</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/CSRF-Protection" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="vigilant-core" role="listitem" data-project-card data-categories="defense network-defense cloud engineering" data-search="vigilant core website domain monitoring local-first network privacy TLS certificates DNS DNS-over-HTTPS website security">
+          <p class="project-meta">11 · DEFENSIVE INTELLIGENCE · PRIVACY BY DESIGN</p><h2>vigilant-core · Private domain monitoring</h2><p>A local-first monitoring app for domains you control: checks DNS, TLS certificate chains, registration and email-authentication records, without sending scan data to a central account.</p><div class="project-tags"><span>Flutter / Dart</span><span>DNS-over-HTTPS</span><span>TLS</span><span>Privacy</span><span>Android / iOS</span></div><div class="project-card-footer"><a href="https://github.com/karthikkunal/vigilant-core" target="_blank" rel="noreferrer">Explore the repository ↗</a><a href="https://karthikkunal.github.io/vigilant-core/app/" target="_blank" rel="noreferrer">Open the app ↗</a></div>
+        </article>
+        <article class="project-detail" id="genie-discovery" role="listitem" data-project-card data-categories="defense cloud network-defense engineering" data-search="Genie Discovery TLS certificate inventory Windows agent endpoint certificates expired duplicate certificates TCP sockets process ownership FastAPI React SQLite">
+          <p class="project-meta">12 · ENDPOINT DEFENSE · TLS VISIBILITY</p><h2>Genie Discovery · TLS &amp; certificate inventory</h2><p>Windows endpoint certificate discovery with a lightweight Go agent, TLS metadata probes and a reporting dashboard for tracking certificate evidence and relationships.</p><div class="project-tags"><span>Go</span><span>FastAPI</span><span>React</span><span>Windows</span><span>TLS</span><span>SQLite</span></div><div class="project-card-footer"><a href="https://github.com/karthikkunal/Genie-Discovery" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">karthikkunal</span></div>
+        </article>
+        <article class="project-detail" id="opsforge" role="listitem" data-project-card data-categories="cloud defense appsec engineering" data-search="OpsForge Linux composition secure policy GitLab pipelines fleet management software supply chain signed artifacts Python Go Terraform Docker Kubernetes">
+          <p class="project-meta">13 · SECURE INFRASTRUCTURE · DEVSECOPS</p><h2>OpsForge · Secure fleet orchestration</h2><p>A GitLab-driven platform for composing Linux systems, validating security policy, managing remote fleets and orchestrating controlled deployments.</p><div class="project-tags"><span>Linux</span><span>Policy as code</span><span>GitLab</span><span>Go</span><span>Python</span><span>Docker</span></div><div class="project-card-footer"><a href="https://github.com/karthikkunal/opsforge" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">karthikkunal</span></div>
+        </article>
+        <article class="project-detail" id="debian-composer" role="listitem" data-project-card data-categories="cloud defense engineering" data-search="Debian Composer advanced linux automation system configuration reusable modular recipes security conflicts">
+          <p class="project-meta">14 · LINUX ENGINEERING · INFRASTRUCTURE AS CODE</p><h2>Debian Composer Advanced</h2><p>A modular recipe manager for assembling, validating and consistently applying reusable configurations on Debian-based systems.</p><div class="project-tags"><span>Go</span><span>Linux</span><span>Recipes</span><span>System automation</span><span>Policy</span></div><div class="project-card-footer"><a href="https://github.com/karthikkunal/debian-composer-advanced" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">karthikkunal</span></div>
+        </article>
+        <article class="project-detail" id="secure-messenger" role="listitem" data-project-card data-categories="cryptography appsec engineering" data-search="secure messenger end-to-end encryption RSA-OAEP public private key cryptography key exchange React TypeScript">
+          <p class="project-meta">15 · APPLIED CRYPTOGRAPHY · PRIVACY</p><h2>End-to-end encrypted messenger</h2><p>A messaging interface exploring generated public/private key pairs, RSA-OAEP message encryption, decryption and clear encrypted-message indicators.</p><div class="project-tags"><span>RSA-OAEP</span><span>Cryptography</span><span>TypeScript</span><span>JavaScript</span><span>Encrypted messaging</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/Secure-Messenger" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="location-access" role="listitem" data-project-card data-categories="appsec cloud defense" data-search="Django Forbid location access device location security geolocation VPN network restriction access control middleware">
+          <p class="project-meta">16 · ACCESS CONTROL · NETWORK PRIVACY</p><h2>Location &amp; VPN-aware access controls</h2><p>Explores restricting application access using device location and detected VPN-network signals, with configurable deny behavior.</p><div class="project-tags"><span>Python</span><span>Django</span><span>Geolocation</span><span>VPN detection</span><span>Access control</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/loaction-based-access" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="distributed-ids" role="listitem" data-project-card data-categories="defense network-defense ai-security iot" data-search="decentralized intrusion detection system IDS distributed Raspberry Pi blockchain AI anomaly detection edge nodes trust">
+          <p class="project-meta">RESEARCH BUILD · DISTRIBUTED DEFENSE</p><h2>Decentralized intrusion detection</h2><p>A résumé-documented architecture for combining edge devices, AI-assisted anomaly detection and secure, decentralized trust between intrusion-detection nodes.</p><div class="project-tags"><span>Python</span><span>Edge security</span><span>AI</span><span>Raspberry Pi</span><span>Blockchain concepts</span></div><div class="project-card-footer"><a href="../assets/karthik-cp-karthik-resume.pdf" download>See research summary in my résumé ↓</a><span class="project-source">Résumé · research build</span></div>
+        </article>
+        <article class="project-detail" id="webapp-security" role="listitem" data-project-card data-categories="appsec engineering" data-search="web application security automation OWASP ZAP Selenium Playwright vulnerability testing CI/CD regression">
+          <p class="project-meta">APPLICATION SECURITY · TEST AUTOMATION</p><h2>Web application security testing framework</h2><p>An automated testing concept for OWASP Top 10-oriented validation, regression testing, security reporting and CI/CD integration.</p><div class="project-tags"><span>OWASP ZAP</span><span>Playwright</span><span>Selenium</span><span>OWASP</span><span>CI/CD</span></div><div class="project-card-footer"><a href="../assets/karthik-cp-karthik-resume.pdf" download>See project details in my résumé ↓</a><span class="project-source">Résumé · security build</span></div>
+        </article>
+        <article class="project-detail" id="llama-finetuning" role="listitem" data-project-card data-categories="ai-security engineering" data-search="Llama 2 Llama2 LoRA fine-tuning large language model fine tuning machine learning training">
+          <p class="project-meta">17 · GENERATIVE AI · MODEL EXPERIMENTS</p><h2>Llama 2 · LoRA fine-tuning exploration</h2><p>A public model-tuning repository exploring parameter-efficient LoRA fine-tuning workflows for Llama-family large language models.</p><div class="project-tags"><span>Python</span><span>LLMs</span><span>LoRA</span><span>Generative AI</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/Llmma2_LORA_Fine_tunning" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="panini-cluster" role="listitem" data-project-card data-categories="ai-security cloud engineering" data-search="Panini cluster distributed AI BLOOM Petals collaborative distributed inference language models P2P training">
+          <p class="project-meta">18 · DISTRIBUTED AI · COLLABORATIVE SYSTEMS</p><h2>Panini Cluster · Distributed model network</h2><p>A collaborative inference and model-compute experiment exploring peer-to-peer nodes and the Petals network for BLOOM language models.</p><div class="project-tags"><span>Python</span><span>Petals</span><span>BLOOM</span><span>Distributed inference</span><span>Peer-to-peer</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/Panini-Cluster" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="rag-assistant" role="listitem" data-project-card data-categories="ai-security engineering" data-search="RAG knowledge assistant retrieval augmented generation document ingestion semantic search embeddings LangChain FAISS REST API">
+          <p class="project-meta">GENERATIVE AI · KNOWLEDGE SYSTEMS</p><h2>Retrieval-augmented knowledge assistant</h2><p>A résumé-documented knowledge platform combining document ingestion, semantic retrieval, vector search and API-based contextual answers.</p><div class="project-tags"><span>Python</span><span>LangChain</span><span>FAISS</span><span>Embeddings</span><span>REST API</span></div><div class="project-card-footer"><a href="../assets/karthik-cp-karthik-resume.pdf" download>See project details in my résumé ↓</a><span class="project-source">Résumé · engineering build</span></div>
+        </article>
+        <article class="project-detail" id="go-basics" role="listitem" data-project-card data-categories="engineering cloud" data-search="Golang basics Go programming language learning fundamentals">
+          <p class="project-meta">19 · PROGRAMMING LANGUAGES · GO</p><h2>Go · Language fundamentals</h2><p>A focused workspace for revisiting Go fundamentals and strengthening the building blocks behind systems-security and backend projects.</p><div class="project-tags"><span>Go</span><span>Language fundamentals</span><span>Systems programming</span></div><div class="project-card-footer"><a href="https://github.com/karthikkunal/golang-basics" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">karthikkunal</span></div>
+        </article>
+        <article class="project-detail" id="grpc-chat" role="listitem" data-project-card data-categories="engineering cloud" data-search="gRPC chat application Go bidirectional streaming Protocol Buffers real-time distributed services">
+          <p class="project-meta">20 · BACKEND ENGINEERING · DISTRIBUTED SYSTEMS</p><h2>Bidirectional gRPC chat application</h2><p>A real-time Go chat server and client demonstrating gRPC bi-directional streaming and Protocol Buffers.</p><div class="project-tags"><span>Go</span><span>gRPC</span><span>Protocol Buffers</span><span>Streaming</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/gRpc-Chat-Application" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="home-lock" role="listitem" data-project-card data-categories="iot ai-security defense" data-search="face recognition home door lock Raspberry Pi camera hardware IoT computer vision physical security">
+          <p class="project-meta">21 · IOT &amp; PHYSICAL SECURITY · COMPUTER VISION</p><h2>Face-recognition Raspberry Pi door lock</h2><p>An embedded security build that brings computer vision, a Raspberry Pi and connected sensors together in a physical access-control prototype.</p><div class="project-tags"><span>Python</span><span>Raspberry Pi</span><span>Face recognition</span><span>IoT</span><span>Sensors</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/home-lock-system" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="datascience" role="listitem" data-project-card data-categories="ai-security engineering" data-search="data science machine learning data analysis Python notebooks">
+          <p class="project-meta">22 · DATA &amp; ML · EXPLORATION</p><h2>Data science learning projects</h2><p>A collection of data-science learning and exploration material supporting continued work in analysis, machine learning and threat-data investigation.</p><div class="project-tags"><span>Python</span><span>Data science</span><span>Machine learning</span><span>Notebooks</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/Data-science" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail research-note" id="cryptography" role="listitem" data-project-card data-categories="cryptography appsec" data-search="cryptography post quantum quantum cryptography PKI TLS encryption hashing digital signatures security research">
+          <p class="project-meta">RESEARCH NOTE · APPLIED CRYPTOGRAPHY</p><h2>Cryptography &amp; post-quantum security</h2><p>A résumé-documented learning track through symmetric and asymmetric encryption, secure hashes, PKI, TLS, signatures, key management and post-quantum approaches.</p><div class="project-tags"><span>PKI</span><span>TLS</span><span>Digital signatures</span><span>Key management</span><span>Post-quantum concepts</span></div><div class="project-card-footer"><a href="../pages/about.html#research">See research &amp; credentials ↗</a><span class="project-source">Research &amp; development</span></div>
+        </article>
+        <article class="project-detail" id="employee-platform" role="listitem" data-project-card data-categories="engineering iot" data-search="Django React Leaflet employee tracking location web application map backend authentication">
+          <p class="project-meta">ENGINEERING BUILD · LOCATION-BASED SYSTEMS</p><h2>Employee tracking &amp; mapping platform</h2><p>A résumé-documented full-stack web application combining backend APIs, authentication, mapping and database-connected location visualization.</p><div class="project-tags"><span>Django</span><span>React</span><span>Leaflet</span><span>APIs</span><span>Authentication</span></div><div class="project-card-footer"><a href="../assets/karthik-cp-karthik-resume.pdf" download>See project details in my résumé ↓</a><span class="project-source">Résumé · engineering build</span></div>
+        </article>
+        <article class="project-detail" id="microservices" role="listitem" data-project-card data-categories="engineering cloud appsec" data-search="Go microservices backend platform Gin GORM PostgreSQL MongoDB JWT authentication concurrent">
+          <p class="project-meta">ENGINEERING BUILD · SECURE BACKEND SYSTEMS</p><h2>Authenticated Go microservices platform</h2><p>A résumé-documented backend build exploring REST APIs, JWT-based authentication, concurrent request processing and containerized deployment.</p><div class="project-tags"><span>Go</span><span>Gin</span><span>GORM</span><span>JWT</span><span>PostgreSQL</span><span>MongoDB</span></div><div class="project-card-footer"><a href="../assets/karthik-cp-karthik-resume.pdf" download>See project details in my résumé ↓</a><span class="project-source">Résumé · engineering build</span></div>
+        </article>
+        <article class="project-detail" id="job-tracker" role="listitem" data-project-card data-categories="engineering ai-security" data-search="job apply tracker personal workflow application React TypeScript Lovable">
+          <p class="project-meta">23 · PRODUCT ENGINEERING · FULL STACK</p><h2>Job application tracker</h2><p>A published full-stack application for organizing and tracking a professional job-search workflow.</p><div class="project-tags"><span>TypeScript</span><span>React</span><span>Vite</span><span>Product engineering</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/job-apply-tracker" target="_blank" rel="noreferrer">Explore the repository ↗</a><a href="https://job-apply-tracker.lovable.app/" target="_blank" rel="noreferrer">Open the app ↗</a></div>
+        </article>
+        <article class="project-detail" id="ios-photo" role="listitem" data-project-card data-categories="engineering" data-search="iOS Swift random photo generator photography application Xcode">
+          <p class="project-meta">24 · MOBILE ENGINEERING · IOS</p><h2>Swift random photo generator</h2><p>A Swift and Xcode iOS application exploring image discovery, user-driven generation and mobile application development.</p><div class="project-tags"><span>Swift</span><span>iOS</span><span>Xcode</span><span>Mobile development</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/Swift-Random-Photo-Generator" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="cyphernexsus" role="listitem" data-project-card data-categories="engineering cryptography" data-search="CypherNexsus startup concept digital security TypeScript Tailwind Vite early stage">
+          <p class="project-meta">25 · EARLY-STAGE STARTUP CONCEPT</p><h2>CypherNexsus</h2><p>An early-stage startup and product-design initiative. Its public repository outlines a modern frontend foundation; the concept’s specific product domain remains to be defined.</p><div class="project-tags"><span>TypeScript</span><span>Tailwind CSS</span><span>Vite</span><span>Product exploration</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/cyphernexsus" target="_blank" rel="noreferrer">Explore the repository ↗</a><a href="https://cyphernexsus.netlify.app/" target="_blank" rel="noreferrer">Visit the public site ↗</a></div>
+        </article>
+        <article class="project-detail" id="pytorch-study" role="listitem" data-project-card data-categories="ai-security engineering" data-search="PyTorch deep learning neural networks computer vision model training machine learning education">
+          <p class="project-meta">26 · ML ENGINEERING · DEEP LEARNING</p><h2>PyTorch &amp; deep-learning experiments</h2><p>A machine-learning study repository covering neural networks, model building and exploratory experiments with the PyTorch ecosystem.</p><div class="project-tags"><span>Python</span><span>PyTorch</span><span>Deep learning</span><span>Neural networks</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/PyTorch" target="_blank" rel="noreferrer">Explore the repository ↗</a><span class="project-source">Karthikkkunal</span></div>
+        </article>
+        <article class="project-detail" id="kyber-research" role="listitem" data-project-card data-categories="cryptography ai-security" data-search="post quantum cryptography cryptographic security lattice code hash multivariate TLS key exchange signatures">
+          <p class="project-meta">RESEARCH NOTE · NEXT-GENERATION CRYPTOGRAPHY</p><h2>Post-quantum cryptography research</h2><p>Ongoing technical exploration of quantum-resistant cryptographic approaches—including lattice-based, code-based, hash-based and multivariate families.</p><div class="project-tags"><span>Cryptography</span><span>Post-quantum concepts</span><span>TLS</span><span>Secure protocols</span></div><div class="project-card-footer"><a href="../pages/about.html#research">Explore my research interests ↗</a><span class="project-source">Résumé · R&amp;D</span></div>
+        </article>
+        <article class="project-detail" id="kajusnap" role="listitem" data-project-card data-categories="engineering" data-search="KajuSnap project repository public Karthikkkunal">
+          <p class="project-meta">27 · PUBLIC REPOSITORY · NEW PROJECT DETAILS TO FOLLOW</p><h2>KajuSnap</h2><p>This public repository does not yet contain a project description. I’ve kept the listing intentionally accurate; more details can be added here when the project is documented.</p><div class="project-tags"><span>Public repository</span><span>Project in progress</span></div><div class="project-card-footer"><a href="https://github.com/Karthikkkunal/KajuSnap" target="_blank" rel="noreferrer">Check the latest repository ↗</a><span class="project-source">Documentation not yet published</span></div>
+        </article>
+      </div>
+      <div id="emptyProjects" class="empty-projects" hidden>No projects found. Try another search term or category.</div>
+    </section>
 
-  <section class="project-list">
-    <article class="project-detail" id="atro">
-      <div class="project-meta">AI Security / Threat Response</div>
-      <h2>ATRO‑LLM‑MCP</h2>
-      <p>Advanced Threat Response Orchestrator built around the idea of multi-agent cyber defense, LLM-backed threat understanding, context sharing, and automated response workflows.</p>
-      <ul>
-        <li>Multi-agent architecture for security use cases</li>
-        <li>LLM-assisted threat analysis and response recommendations</li>
-        <li>Model Context Protocol inspired context exchange</li>
-        <li>Dashboard-first approach for analysts</li>
-      </ul>
-      <a href="https://github.com/Karthikkkunal/ATRO-LLM-MCP" target="_blank" rel="noreferrer">View repository →</a>
-    </article>
-
-    <article class="project-detail" id="gomail">
-      <div class="project-meta">Product Concept / Email Security</div>
-      <h2>GoMail AI</h2>
-      <p>A professional product direction for AI-powered phishing email investigation. The goal is to reduce manual triage by turning headers, URLs, attachments, and body indicators into a clean analyst report.</p>
-      <ul>
-        <li>Email header and authentication workflow</li>
-        <li>URL/domain/IP investigation pipeline</li>
-        <li>Risk scoring and verdict explanation</li>
-        <li>Report-ready output for SOC teams</li>
-      </ul>
-      <a href="../pages/contact.html">Discuss this project →</a>
-    </article>
-
-    <article class="project-detail" id="gosec">
-      <div class="project-meta">Learning Platform / Community</div>
-      <h2>GoSec</h2>
-      <p>A cybersecurity learning and practice platform concept for students and early-career analysts. The long-term vision is a practical, habit-building platform for security skills.</p>
-      <ul>
-        <li>Daily cybersecurity learning flow</li>
-        <li>SOC and blue-team focused practice</li>
-        <li>Project-based learning and interview preparation</li>
-        <li>Community and professional growth direction</li>
-      </ul>
-      <a href="../pages/contact.html">Connect about GoSec →</a>
-    </article>
-
-    <article class="project-detail">
-      <div class="project-meta">Go / Vulnerability Intelligence</div>
-      <h2>Vulnerability Web Scraper</h2>
-      <p>Go-based vulnerability intelligence scraper focused on structured data collection, concurrency, high/critical severity tracking, and practical reporting formats.</p>
-      <ul>
-        <li>Golang implementation</li>
-        <li>Concurrent scraping concepts</li>
-        <li>JSON/CSV output structure</li>
-        <li>Security intelligence use case</li>
-      </ul>
-      <a href="https://github.com/Karthikkkunal/Vulnerability-Web-Scraper" target="_blank" rel="noreferrer">View repository →</a>
-    </article>
-
-    <article class="project-detail">
-      <div class="project-meta">Wireless Security</div>
-      <h2>Wireless Intrusion Detection System</h2>
-      <p>A WIDS concept for identifying Evil Twin attacks, deauthentication behavior, WPA2 attack indicators, and integration paths with Zeek, Suricata, and AI models.</p>
-      <a href="https://github.com/Karthikkkunal/Wireless-Intrusion-Detection-System-WIDS-" target="_blank" rel="noreferrer">View repository →</a>
-    </article>
-
-    <article class="project-detail">
-      <div class="project-meta">Go / Distributed Systems</div>
-      <h2>gRPC Chat Application</h2>
-      <p>Bi-directional streaming chat application using Go, gRPC, and Protocol Buffers to demonstrate real-time communication patterns.</p>
-      <a href="https://github.com/Karthikkkunal/gRpc-Chat-Application" target="_blank" rel="noreferrer">View repository →</a>
-    </article>
-  </section>
-</main>
-
-<footer class="footer">
-  <div>
-    <strong>C. P. Karthik</strong>
-    <p>Building AI-powered cybersecurity systems, email security workflows, and cloud-native automation.</p>
-  </div>
-  <div class="footer-links">
-    <a href="https://www.linkedin.com/in/c-p-karthik-9128b9252/" target="_blank" rel="noreferrer">LinkedIn</a>
-    <a href="https://github.com/karthikkkunal" target="_blank" rel="noreferrer">GitHub</a>
-    <a href="https://medium.com/me/stories?tab=posts-published" target="_blank" rel="noreferrer">Medium</a>
-    <a href="mailto:karthikkunal1122002@gmail.com">Email</a>
-  </div>
-</footer>
-<script src="../assets/script.js"></script>
+    <section class="project-research-section" id="research">
+      <div class="research-head"><span class="section-number">RESEARCH NOTES · WORK IN PROGRESS</span><h2>Curiosity is part of <span>the work.</span></h2><p>These are areas of exploration rather than claims of finished production products: clearly marked, grounded in the projects and résumé, and open to further investigation.</p></div>
+      <div class="research-notes-grid"><article><span>01 · EMBEDDED SECURITY</span><h3>Edge-first &amp; decentralized defense</h3><p>Intrusion detection, resource-aware anomaly analysis and trustworthy communication across distributed IoT devices.</p></article><article><span>02 · APPLIED CRYPTOGRAPHY</span><h3>Privacy, keys &amp; the quantum frontier</h3><p>Applied encryption, PKI, TLS and signatures; exploring how post-quantum cryptographic approaches fit future systems.</p></article><article><span>03 · ASSISTIVE AI</span><h3>Secure, explainable AI for analysts</h3><p>Retrieval, context-sharing and human-reviewed AI assistance to help investigate threats without obscuring evidence.</p></article></div>
+    </section>
+    <section class="cta-panel"><p class="section-tag">CYBERSECURITY, END TO END</p><h2>Working on an interesting security problem?</h2><p>I’d love to discuss threat research, AppSec, network defense, infrastructure security, AI and defensive tooling.</p><div class="hero-actions"><a class="btn primary" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a><a class="btn" href="https://www.linkedin.com/in/c-p-karthik-9128b9252/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="footer"><a class="footer-name" href="../index.html">C. P. Karthik <span>Cybersecurity · Backend · AI</span></a><span class="footer-note">27 GitHub repositories. Eight résumé-documented research builds. © <span class="current-year">2026</span></span><div class="footer-links"><a href="mailto:karthikkunal1122002@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/c-p-karthik-9128b9252/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Karthikkkunal" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://github.com/karthikkunal" target="_blank" rel="noreferrer">GitHub · systems ↗</a></div></footer>
+  <script src="../assets/script.js"></script>
 </body>
 </html>
