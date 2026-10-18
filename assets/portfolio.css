@@ -12,11 +12,19 @@
 
 html { scroll-behavior: smooth; scroll-padding-top: 100px; }
 body {
-  background: var(--canvas);
+  position: relative;
+  isolation: isolate;
+  background: transparent;
   color: var(--ink);
   font-family: "DM Sans", "Manrope", sans-serif;
 }
-body::before, .page-noise { display: none; }
+body::before {
+  z-index: -1;
+  display: block;
+  background: rgb(248 247 243 / 24%);
+  mask-image: none;
+}
+.page-noise { display: none; }
 ::selection { background: var(--accent); color: var(--ink); }
 a { color: inherit; }
 .skip-link {
@@ -38,7 +46,7 @@ a { color: inherit; }
   position: sticky;
   border: 0;
   border-radius: 0;
-  background: var(--canvas);
+  background: rgb(248 247 243 / 88%);
   box-shadow: 0 1px 0 rgb(35 33 40 / 9%);
   backdrop-filter: none;
 }
@@ -83,14 +91,19 @@ a { color: inherit; }
 }
 .menu-btn span { margin-left: 8px; color: var(--muted-ink); }
 .home-page .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   display: block;
   width: 100%;
   min-height: min(710px, calc(100vh - 86px));
   margin: 0;
   padding: 0 max(32px, calc((100% - var(--page-width)) / 2));
-  background: var(--aubergine);
+  background: transparent;
   color: #fff;
 }
+.threat-map-background { position: fixed; z-index: -2; top: -14vh; right: 0; bottom: auto; left: 0; display: block; width: 100%; height: 128vh; border: 0; background: #111014; opacity: .88; pointer-events: none; }
+.home-page .hero::before { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgb(40 35 48 / 62%) 0%, rgb(40 35 48 / 43%) 42%, rgb(40 35 48 / 16%) 100%), linear-gradient(0deg, rgb(40 35 48 / 22%), transparent 72%); content: ""; pointer-events: none; }
 .hero-inner {
   display: grid;
   width: 100%;
@@ -98,6 +111,7 @@ a { color: inherit; }
   min-height: min(710px, calc(100vh - 86px));
   margin: 0 auto;
   position: relative;
+  z-index: 2;
   grid-template-columns: .99fr 1.01fr;
   grid-template-rows: 1fr auto;
   align-items: center;
@@ -164,17 +178,23 @@ a { color: inherit; }
   aspect-ratio: 1 / .87;
   place-self: center end;
   overflow: hidden;
-  background: #a79db7;
+  background: transparent;
   isolation: isolate;
 }
-.hero-art::after { position: absolute; z-index: -1; inset: 0; background: linear-gradient(140deg, transparent 45%, rgb(38 31 47 / 17%)); content: ""; }
+.hero-art::after { position: absolute; z-index: 1; inset: 0; background: linear-gradient(140deg, rgb(18 16 22 / 9%) 5%, transparent 45%, rgb(38 31 47 / 18%)); content: ""; pointer-events: none; }
+.hero-visual { position: relative; z-index: 1; display: flex; width: min(100%, 508px); flex-direction: column; justify-self: end; gap: 8px; }
 .art-grid {
   position: absolute;
+  z-index: 2;
   inset: 0;
-  opacity: .15;
+  opacity: .11;
   background-image: linear-gradient(rgb(35 33 40 / 26%) 1px, transparent 1px), linear-gradient(90deg, rgb(35 33 40 / 26%) 1px, transparent 1px);
   background-size: 36px 36px;
 }
+.security-canvas { position: absolute; z-index: 3; inset: 0; width: 100%; height: 100%; opacity: .49; pointer-events: none; }
+.hero-art > .art-ring, .hero-art > .art-orbit, .hero-art > .art-center { display: none; }
+.map-credit { align-self: flex-end; color: rgb(255 255 255 / 72%); font-family: "DM Mono", monospace; font-size: 8px; letter-spacing: .08em; }
+.map-credit:hover { color: var(--accent); }
 .art-ring, .art-orbit { position: absolute; top: 50%; left: 50%; border-radius: 50%; transform: translate(-50%, -50%); }
 .art-ring { border: 1px solid rgb(255 255 255 / 29%); }
 .art-ring-one { width: 68%; aspect-ratio: 1; }
@@ -413,6 +433,7 @@ a { color: inherit; }
 /* Cybersecurity disciplines, professional recognition and the interactive 4D hero. */
 .hero-art { perspective: 1150px; transition: transform .2s ease-out; }
 .security-canvas { position: absolute; z-index: 1; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.hero-art > .security-canvas { z-index: 3; }
 .art-label, .art-index, .art-corner { z-index: 2; }
 .ticker-track { will-change: transform; }
 .disciplines-section { padding-top: 66px; padding-bottom: 80px; }
@@ -570,6 +591,7 @@ a { color: inherit; }
   .home-page .hero { min-height: 0; padding: 0 32px; }
   .hero-inner { min-height: 0; padding: 60px 0 28px; grid-template-columns: 1fr .87fr; gap: 28px; }
   .hero h1 { font-size: clamp(42px, 6vw, 59px); }
+  .hero-visual { width: min(100%, 508px); justify-self: end; }
   .hero-art { width: 100%; }
   .hero-footnote { margin-top: 41px; font-size: 9px; }
   .scroll-cue { margin-top: 10px; }
@@ -592,6 +614,7 @@ a { color: inherit; }
 
 @media (max-width: 650px) {
   .site-header { width: calc(100% - 36px); min-height: 71px; }
+  .threat-map-background { top: -70vh; height: 160vh; }
   .identity-mark { width: 37px; height: 37px; }
   .identity { gap: 10px; }
   .identity strong { font-size: 12px; }
@@ -607,7 +630,8 @@ a { color: inherit; }
   .btn { min-height: 45px; padding: 0 13px; font-size: 11px; }
   .hero-resume { font-size: 10px; }
   .hero-footnote { margin-top: 28px; font-size: 8px; }
-  .hero-art { width: min(100%, 430px); justify-self: center; aspect-ratio: 1.3; }
+  .hero-visual { width: min(100%, 430px); justify-self: center; }
+  .hero-art { width: 100%; justify-self: center; aspect-ratio: 1.3; }
   .art-center { width: 68px; height: 68px; font-size: 28px; }
   .art-orbit-one { width: 68%; }
   .art-label-top { top: 14px; left: 14px; }

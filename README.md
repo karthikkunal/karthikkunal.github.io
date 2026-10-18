@@ -18,6 +18,9 @@ engineering. Its animated 4D canvas responds to pointer movement and respects
 reduced-motion preferences. The project explorer covers 27 distinct public
 GitHub repositories and eight résumé-documented research and engineering builds,
 with live search and category filters.
+Every portfolio page keeps Check Point's live threat map fixed behind the
+content, with a translucent readability layer and a link to its source on the
+homepage.
 
 Both public GitHub profiles and LinkedIn are linked throughout the site. The
 LinkedIn profile does not expose a public banner for use here, so the homepage
